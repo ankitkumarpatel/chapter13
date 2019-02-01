@@ -1,9 +1,10 @@
 # ex 13.1
 
+import string
 
-
-fin= open("book.txt")
+fin= open("bookzzz.txt")
 
 for line in fin:
-    line= line.strip()
+    line= line.strip(string.punctuation+string.whitespace+" ")
+
     print(line)
